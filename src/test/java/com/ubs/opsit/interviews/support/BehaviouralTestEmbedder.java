@@ -64,7 +64,7 @@ public final class BehaviouralTestEmbedder extends ConfigurableEmbedder {
                 .useStoryReporterBuilder(new SandboxStoryReporterBuilder());
     }
 
-    private List<String> createStoryPaths() {
+    public List<String> createStoryPaths() {
         return ClasspathStoryFinder.findFilenamesThatMatch(wildcardStoryFilename);
     }
 
